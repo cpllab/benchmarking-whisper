@@ -10,7 +10,7 @@ import time
 
 audio_file  = sys.argv[1]
 specific_path = sys.argv[2]
-
+YOURTOKEN = ""
 device = "cuda" 
  
 batch_size = 8 # reduce if low on GPU mem
@@ -41,7 +41,7 @@ print(result["segments"]) # after alignment
 # import gc; gc.collect(); torch.cuda.empty_cache(); del model_a
 
 # 3. Assign speaker labels
-diarize_model = whisperx.DiarizationPipeline(use_auth_token='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', device=device)
+diarize_model = whisperx.DiarizationPipeline(use_auth_token=YOURTOKEN, device=device)
 
 # add min/max number of speakers if known
 diarize_segments = diarize_model(audio)

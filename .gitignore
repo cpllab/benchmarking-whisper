@@ -41,3 +41,4 @@ providence_split.csv
 *.zip
 *.csv
 handy_commands.txt
+datapull.ipynb

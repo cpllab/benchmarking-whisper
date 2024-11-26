@@ -9,10 +9,10 @@ import glob
 import json
 import time
 import argparse
-
+ = ""
 print("Running CB1: yinruiqing")
 pipeline = Pipeline.from_pretrained("pyannote/speaker-diarization",
-                                    use_auth_token="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")
+                                    use_auth_token=YOURTOKEN)
 
 # look for arguments to play around with 
 
