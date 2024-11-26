@@ -2,5 +2,3 @@
 Arjun Pawar , Stephan Meylan
 
 2024
-
-java -jar bfg.jar --delete-files handy_commands.txt
